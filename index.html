@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet" />
+
+    <script src="./js/index.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js"
+      integrity="sha512-zInFF17qBFVvvvFpIfeBzo7Tj7+rQxLeTJDmbxjBz5/zIr89YVbTNelNhdTT+/DCrxoVzBeUPVFJsczKbB7sew=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <title>Change Color</title>
+  </head>
+  <body class="">
+    <div class="container hidden">
+      <div class="cookiesContent" id="cookiesPopup">
+        <button class="close close-modal">✖</button>
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/1047/1047711.png"
+          alt="cookies-img" />
+        <p>Вы скопировали данный текст в буфер обмена.</p>
+        <button class="accept close-modal">Круто!</button>
+      </div>
+    </div>
+    <div class="cols">
+      <div class="col">
+        <h2 data-type="copy" class="text">Color</h2>
+        <button class="button" data-type="lock">
+          <i class="fa fa-unlock" aria-hidden="true" data-type="lock"></i>
+        </button>
+      </div>
+      <div class="col">
+        <h2 data-type="copy" class="text">Color</h2>
+        <button class="button" data-type="lock">
+          <i class="fa fa-unlock" aria-hidden="true" data-type="lock"></i
+        ></button>
+      </div>
+      <div class="col">
+        <h2 data-type="copy" class="text">Color</h2>
+        <button class="button" data-type="lock">
+          <i class="fa fa-unlock" aria-hidden="true" data-type="lock"></i
+        ></button>
+      </div>
+      <div class="col">
+        <h2 data-type="copy" class="text">Color</h2>
+        <button class="button" data-type="lock">
+          <i class="fa fa-unlock" aria-hidden="true" data-type="lock"></i
+        ></button>
+      </div>
+    </div>
+    <div class="button-inner">
+      <button class="button-inner__button">Обновить цвета</button>
+    </div>
+  </body>
+</html>

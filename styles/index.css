@@ -1,0 +1,138 @@
+.body {
+  font-family: 'Poppins', sans-serif;
+}
+.button {
+  width: 230px;
+  height: 50px;
+  border-radius: 20px;
+  background: -webkit-linear-gradient(90deg, #4129d9, #6e30d1, #8245bf);
+  background: linear-gradient(90deg, #4129d9, #6e30d1, #8245bf);
+  align-items: center;
+  color: #fff;
+  letter-spacing: 2px;
+  justify-content: center;
+  display: flex;
+  transition: all 0.4s;
+}
+.button:hover {
+  box-shadow: 5px 4px 29px -2px black;
+  border: 7px solid rgb(255, 255, 255);
+  transform: scale(1.05);
+}
+.button--active {
+  box-shadow: 5px 4px 29px -2px black;
+  border: 7px solid rgb(255, 255, 255);
+  transform: scale(1.05);
+}
+
+.cols {
+  display: flex;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+.col {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.col h2 {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 48px;
+  color: #fff;
+  font-weight: 900;
+  transition: text-shadow, transform 0.5s;
+}
+.col h2:hover {
+  text-shadow: rgb(0 0 0) 1px 0 28px;
+  transform: scale(1.02);
+}
+
+.button-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 0;
+  display: none;
+}
+.button-inner .button-inner__button {
+  width: 230px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #000;
+  align-items: center;
+  color: #fff;
+  letter-spacing: 2px;
+  justify-content: center;
+  display: flex;
+  transition: all 0.4s;
+}
+@media (max-width: 768px) {
+  .button-inner {
+    display: flex;
+  }
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.cookiesContent {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  border-radius: 20px;
+  padding: 30px 30px 70px;
+}
+
+.cookiesContent button.close {
+  width: 30px;
+  font-size: 20px;
+  color: #c0c5cb;
+  align-self: flex-end;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.cookiesContent img {
+  width: 82px;
+  margin-bottom: 15px;
+}
+.cookiesContent p {
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+.cookiesContent button.accept {
+  background-color: #ed6755;
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  padding: 14px;
+  font-size: 16px;
+  color: white;
+  box-shadow: 0px 6px 18px -5px rgba(237, 103, 85, 1);
+}
+
+.hidden {
+  display: none;
+}
